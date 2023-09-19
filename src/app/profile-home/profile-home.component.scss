@@ -1,0 +1,47 @@
+.main-div {
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--bgGradient);
+    .image-container{
+        width: 190px;
+        height: 190px;
+        border-radius: 50px;
+        margin: auto;
+        background-color: var(--grad1);
+        background-image: var(--secGrad1);
+        transform: rotate(25deg);
+        position: relative;
+        top: 45px;
+        .my-image {
+            margin: auto;
+            position: relative;
+            top: 14px;
+            width: 150px;
+            height: 160px;
+            border-radius: 50px;
+            transform: rotate(-25deg);
+            background-image: url(../../assets/images/standing_ful_closel.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .name-div {
+        position: relative;
+        top: 1.5em;
+        width: 18em;
+        height: 3em;
+        margin: auto;
+        // background-color: var(--secondary);
+        background-color: var(--grad2);
+        background-image: var(--secGrad2);
+        text-align: center;
+        border-radius: 1.5em;
+        .name{
+            color: var(--fontColor);
+            font-weight: 600;
+            font-size: 35px;
+            margin: 0;
+            font-family: cursive;
+        }
+    }
+}
