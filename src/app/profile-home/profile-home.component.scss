@@ -1,6 +1,6 @@
 .main-div {
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    min-height: 100%;
     background-image: var(--bgGradient);
     .image-container{
         width: 190px;
@@ -11,7 +11,7 @@
         background-image: var(--secGrad1);
         transform: rotate(25deg);
         position: relative;
-        top: 45px;
+        top: 25px;
         .my-image {
             margin: auto;
             position: relative;
@@ -25,9 +25,7 @@
             background-size: contain;
         }
     }
-    .name-div {
-        position: relative;
-        top: 1.5em;
+    .name-div {        
         width: 18em;
         height: 3em;
         margin: auto;
@@ -35,6 +33,7 @@
         background-image: var(--secGrad2);
         text-align: center;
         border-radius: 1.5em;
+        position: relative;
         .name{
             color: var(--fontColor);
             font-weight: 600;
@@ -45,23 +44,86 @@
     }
     .obj-div{
         width: 80vw;
-        height: 50px;
+        height: fit-content;
+        margin: auto;
         .obj-text{
             h2{
                 color: var(--lightFont);
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: var(--font-family);
                 margin-bottom: 5px;
             }
             p{
                 color: var(--lightFont);
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: var(--font-family);
                 font-size: larger;
                 margin-left: 30px;
                 margin-top: 0px;
             }
-        }
-        position: relative;
-        top: 1.5em;
+        }        
+    }
+    .experience-div{
+        width: 80vw;
         margin: auto;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        font-family: var(--font-family);
+        color: var(--lightFont);
+        #exp-header{
+            width: fit-content;
+            margin: auto;
+        }
+        .exp-body{
+            cursor: pointer;
+            color: var(--lightFont);
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            h3{margin: 5px;}
+            justify-content: space-between;
+            width: 15em;
+            justify-content: space-between;
+            .education{
+                display: flex;
+                flex-direction: row;
+                place-items: center;
+                #grad-cap{max-width: 25px;margin-right: 0.5em;}
+            }
+            .work{
+                display: flex;
+                flex-direction: row;
+                place-items: center;
+                #work-bag{max-width: 21px;margin-right: 0.5em}
+            }
+            .exp-select{
+                background-color: var(--highlight-bg);
+                border-radius: 2px;
+                width: fit-content;
+                color: var(--black);
+            }
+        }
+        .exp-details{
+            margin: auto;
+                .grid-div {
+                    display: grid;
+                    grid-template-columns: 1fr max-content 1fr;
+                    column-gap: 1.5rem;
+                    height: 7em;
+                    .dots{
+                        display: inline-block;
+                        width: 0.5em;
+                        height: 0.5em;
+                        background-color: var(--lightFont);
+                        border-radius: 50%;
+                    }
+                    .v-lines{
+                        display: block;
+                        width: 1px;
+                        height: 100%;
+                        background-color: var(--lightFont);
+                        transform: translate(4px, -7px);
+                    }
+                }
+            }
     }
 }
