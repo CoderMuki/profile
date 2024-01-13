@@ -15,4 +15,117 @@
             </p>
         </div>
     </div>
+    <div class="experience-div">
+        <div id="exp-header">
+            <h2>Experience</h2>
+        </div>
+        <div class="exp-body">
+            <h3 class="education" (click)="showEdu=true"><img id="grad-cap" src="../../assets/icons/grad-cap.svg"><span [ngClass]="showEdu ? 'exp-select' : ''">Education</span>
+            </h3>
+            <h3 class="work" (click)="showEdu=false"><img id="work-bag" src="../../assets/icons/work-bag.svg"><span [ngClass]="!showEdu ? 'exp-select' : ''">Work</span>
+            </h3>
+        </div>
+        <div class="exp-details">
+            <ng-container *ngIf="showEdu; then education else work"></ng-container>
+        </div>
+    </div>
 </div>
+
+
+
+<ng-template #education>
+    <div class="grid-div">
+        <div>
+            <h3>
+                Class X 
+            </h3>
+            <span >David Matriculation HSS, Chennai, India</span>
+            <div >
+                2014 - 2015
+            </div>
+        </div>
+        <div>
+            <span class="dots"></span>
+            <span class="v-lines"></span>
+        </div>
+    </div>
+    <div class="grid-div">
+        <div></div>
+        <div>
+            <span class="dots"></span>
+            <span class="v-lines"></span>
+        </div>
+        <div>
+            <h3>
+                Class XII 
+            </h3>
+            <span >David Matriculation HSS, Chennai, India</span>
+            <div >
+                2016 - 2017
+            </div>
+        </div>
+
+    </div>
+    <div class="grid-div">
+        <div>
+            <h3>
+                Electrical and Electronics Engg
+            </h3>
+            <span >Sri Sairam Institute of Technology, Chennai, India</span>
+            <div >
+                2017 - 2021
+            </div>
+        </div>
+        <div>
+            <span class="dots"></span>
+        </div>
+    </div>
+</ng-template>
+<ng-template #work>
+    <div class="grid-div">
+        <div>
+            <h3>
+                Software Engineer
+            </h3>
+            <span>Sterling Software Pvt. Ltd., Chennai, India</span>
+            <div>
+                2024 - Present
+            </div>
+        </div>
+        <div>
+            <span class="dots"></span>
+            <span class="v-lines"></span>
+        </div>
+    </div>
+    <div class="grid-div">
+        <div></div>
+        <div>
+            <span class="dots"></span>
+            <span class="v-lines"></span>
+        </div>
+        <div>
+            <h3>
+                Graduate Engineering Trainee 
+            </h3>
+            <span>Sterling Software Pvt. Ltd., Chennai, India</span>
+            <div>
+                2022 - 2023
+            </div>
+        </div>
+
+    </div>
+    <div class="grid-div">
+        <div>
+            <h3>
+                Graphics Designer
+            </h3>
+            <span>Introis Technologies, Chennai, India</span>
+            <div>
+                2021 - 2022
+            </div>
+        </div>
+        <div>
+            <span class="dots"></span>
+        </div>
+    </div>
+</ng-template>

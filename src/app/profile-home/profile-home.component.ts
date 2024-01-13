@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile-home.component.scss']
 })
 export class ProfileHomeComponent {
+  showEdu = true;
 
 }
+
+
+// TODO: Light bulb for light and dark mode
