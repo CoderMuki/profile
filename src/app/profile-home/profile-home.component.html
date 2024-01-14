@@ -6,6 +6,17 @@
     <div class="name-div">
         <p class="name">MUKILAN</p>
     </div>
+    <div class="about-div">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <!-- <p class="about-para">
+               <span>A Software Engineer with 2+ years of experience in WebApp development with</span>  <span><img id="ang" src="../../assets/icons/angularlogo.svg"></span><span> framework and</span> <span><img id="node" src="../../assets/icons/nodejslogo.svg"></span> <span> runtime environment</span>
+            </p> -->
+            <p class="">
+                A Software Engineer with 2+ years of experience in WebApp development with <span (click)="urlOpen('https://angular.io/docs')"><img id="ang" src="../../assets/icons/angular.svg"></span>ngular framework and <span (click)="urlOpen('https://nodejs.org/en/about')"> Node<img id="node" src="../../assets/icons/nodejs.svg"></span>  runtime environment
+             </p>
+        </div>
+    </div>
     <div class="obj-div">
         <div class="obj-text">
             <h2>Career Objective</h2>
@@ -39,8 +50,8 @@
             <h3>
                 Class X 
             </h3>
-            <span >David Matriculation HSS, Chennai, India</span>
-            <div >
+            <span class="med-col">David Matriculation HSS, Chennai, India</span>
+            <div class="med-col">
                 2014 - 2015
             </div>
         </div>
@@ -59,8 +70,8 @@
             <h3>
                 Class XII 
             </h3>
-            <span >David Matriculation HSS, Chennai, India</span>
-            <div >
+            <span class="med-col">David Matriculation HSS, Chennai, India</span>
+            <div class="med-col">
                 2016 - 2017
             </div>
         </div>
@@ -69,10 +80,10 @@
     <div class="grid-div">
         <div>
             <h3>
-                Electrical and Electronics Engg
+                Electrical and Electronics Engg.
             </h3>
-            <span >Sri Sairam Institute of Technology, Chennai, India</span>
-            <div >
+            <span class="med-col">Sri Sairam Institute of Technology, Chennai, India</span>
+            <div class="med-col">
                 2017 - 2021
             </div>
         </div>
@@ -83,13 +94,30 @@
 </ng-template>
 <ng-template #work>
     <div class="grid-div">
+        <div></div>
+        <div>
+            <span class="dots"></span>
+            <span class="v-lines"></span>
+        </div>
         <div>
             <h3>
-                Software Engineer
+                Graphics Designer
             </h3>
-            <span>Sterling Software Pvt. Ltd., Chennai, India</span>
-            <div>
-                2024 - Present
+            <span class="med-col">Introis Technologies, Chennai, India</span>
+            <div class="med-col">
+                2021 - 2022
+            </div>
+        </div>
+
+    </div>
+    <div class="grid-div">
+        <div>
+            <h3>
+                Graduate Engineering Trainee
+            </h3>
+            <span class="med-col">Sterling Software Pvt. Ltd., Chennai, India</span>
+            <div class="med-col">
+                2022 - 2023
             </div>
         </div>
         <div>
@@ -101,31 +129,16 @@
         <div></div>
         <div>
             <span class="dots"></span>
-            <span class="v-lines"></span>
         </div>
         <div>
             <h3>
-                Graduate Engineering Trainee 
+                Software Engineer
             </h3>
-            <span>Sterling Software Pvt. Ltd., Chennai, India</span>
-            <div>
-                2022 - 2023
+            <span class="med-col">Sterling Software Pvt. Ltd., Chennai, India</span>
+            <div class="med-col">
+                2024 - Present
             </div>
         </div>
 
-    </div>
-    <div class="grid-div">
-        <div>
-            <h3>
-                Graphics Designer
-            </h3>
-            <span>Introis Technologies, Chennai, India</span>
-            <div>
-                2021 - 2022
-            </div>
-        </div>
-        <div>
-            <span class="dots"></span>
-        </div>
     </div>
 </ng-template>
