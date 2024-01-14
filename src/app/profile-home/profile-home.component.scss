@@ -1,12 +1,25 @@
 .main-div {
-    // width: 100vw;
     min-height: 100%;
+    .switch{
+        height: 2.5em;
+        width: 2.5em;
+        // background-color: aqua;
+        right: 0;
+        position: fixed;
+        .bulb{
+            max-width: 2em;
+            transform: rotate(230deg);
+            position: fixed;
+            top: -2px;
+            right: 0px;
+        }
+    }
     .image-container{
         width: 190px;
         height: 190px;
         border-radius: 50px;
         margin: auto;
-        background-color: var(--grad1);
+        background-color: var(--grad2);
         transform: rotate(25deg);
         position: relative;
         top: 25px;
@@ -27,7 +40,7 @@
         width: 15em;
         height: 3em;
         margin: auto;
-        background-color: var(--grad1);
+        background-color: var(--grad2);
         text-align: center;
         border-radius: 1.5em;
         position: relative;
@@ -42,7 +55,7 @@
     .about-div{
         width: 80vw;
         height: fit-content;
-        margin: 2em auto;
+        margin: 4em auto;
         .about-text{
             h2{
                 color: var(--lightFont);
@@ -79,7 +92,7 @@
     .obj-div{
         width: 80vw;
         height: fit-content;
-        margin: 2em auto;
+        margin: 4em auto;
         .obj-text{
             h2{
                 color: var(--lightFont);
@@ -95,9 +108,34 @@
             }
         }        
     }
+    .skills-div{
+        width: 80vw;
+        margin: 4em auto;
+        height: fit-content;
+        font-family: var(--font-family);
+        color: var(--lightFont);
+        #skills-header {
+            width: fit-content;
+            margin: auto;
+        }
+        .skills-body{
+            display: flex;
+            flex-direction: column;
+            .skl-body-main{
+                span{
+                    display: flex;
+                    flex-direction: row;
+                }
+                .chips{
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+    }
     .experience-div{
         width: 80vw;
-        margin: auto;
+        margin: 4em auto;
         height: fit-content;
         display: flex;
         flex-direction: column;

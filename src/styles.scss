@@ -19,10 +19,21 @@ body {
     --secondary: #f64c72;
     --grad1: #36cfd9;
     --secGrad1: linear-gradient(19deg, #f64c72 0%, #ef7d96 100%);
-    --grad2: #eb496c;
+    --grad2: #36cfd9;
     --secgrad2: linear-gradient(270deg, #eb496c 0%,  #f64c72 100%);
     --scroll-bar-color: #1cc5d4;
     --scroll-thumb-color: #0d0f57;
+}
+
+body.light-theme{
+
+        --main-Bg: #c5f7fb;
+        --lightFont: #000000;
+        --mediumFont: hsl(189,38%,20%,1);
+        --darkFont: #aee7f0;
+        --grad1: #56ebf5;
+        --grad2: hsl(193, 29%, 16%);
+
 }
 
 ::-webkit-scrollbar{
