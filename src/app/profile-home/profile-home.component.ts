@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class ProfileHomeComponent {
   showEdu = true;
 
+  urlOpen(url: any){
+    window.open(url,'_blank');
+  }
+
 }
 
 
