@@ -1,4 +1,20 @@
 import { Component, Input } from '@angular/core';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCzKFTT1pO_nN48gvD3Or2BC-wdiCeMvC0",
+  authDomain: "mukilans-profile.firebaseapp.com",
+  projectId: "mukilans-profile",
+  storageBucket: "mukilans-profile.appspot.com",
+  messagingSenderId: "303598254569",
+  appId: "1:303598254569:web:51b72ecfb9386b8188f378",
+  measurementId: "G-DG91EWGXW6"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 @Component({
   selector: 'app-root',
