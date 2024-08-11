@@ -20,9 +20,12 @@ body {
     --grad1: #36cfd9;
     --secGrad1: linear-gradient(19deg, #f64c72 0%, #ef7d96 100%);
     --grad2: #36cfd9;
+    --grad3: #37494b;
+    --white: #ffffff;
     --secgrad2: linear-gradient(270deg, #eb496c 0%,  #f64c72 100%);
     --scroll-bar-color: #1cc5d4;
     --scroll-thumb-color: #0d0f57;
+    --darkbgview: #1b1e268f;
 }
 
 body.light-theme{
@@ -33,6 +36,7 @@ body.light-theme{
         --darkFont: #aee7f0;
         --grad1: #56ebf5;
         --grad2: hsl(193, 29%, 16%);
+        --grad3: hsl(193, 26%, 24%);
 
 }
 
@@ -42,7 +46,7 @@ body.light-theme{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--scroll-thumb-color);
+    background-color: var(--darkbgview);
     border-radius: .5rem;
 }
 
