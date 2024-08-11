@@ -7,7 +7,7 @@
         <span (click)="scrollView('contact')">Contact</span>
     </div>
 </div>
-<div *ngIf="showHeader && mobHeader" class="mob-header">
+<div *ngIf="mobHeader" class="mob-header">
     <div class="menus" (click)="showMenu = !showMenu"><i class="fa-solid fa-bars"></i></div>
     <ng-container *ngIf="showMenu; then menu"></ng-container>
 </div>

@@ -28,7 +28,7 @@
 .mob-header {
     height: 2em;
     width: 2.5em;
-    background-color: var(--grad3);
+    background-color: var(--mb-menu-bg);
     position: fixed;
     z-index: 2;
     display: flex;
@@ -36,6 +36,7 @@
     align-items: center;
     .menus {
         position: fixed;
+        color: var(--white);
     }
     .submenus {
         position: relative;
@@ -57,6 +58,15 @@
         }
         span:first-child {
             margin-top: 0.6em;
+        }
+    }
+}
+
+@media screen and (max-width: 969px) {
+    .mob-header {
+        background-color: var(--grad1);
+        .menus {
+            color: var(--lightFont);
         }
     }
 }
