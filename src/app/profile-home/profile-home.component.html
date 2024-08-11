@@ -3,6 +3,7 @@
         <img *ngIf="offBulb" class="bulb" src="../../assets/icons/off-bulb.svg" alt="theme_switch">
         <img *ngIf="!offBulb" class="bulb" src="../../assets/icons/on-bulb.svg" alt="theme_switch">
     </div>
+    <div id="home"></div>
     <div class="image-container">
         <div class="my-image">
         </div>
@@ -22,14 +23,15 @@
             </div>
         </div>
     </div>
-    <div class="name-div">
+    <div id=nameDiv class="name-div">
         <p class="name">MUKILAN</p>
     </div>
+    <div id="about"></div>
     <div class="about-div">
         <div class="about-text">
             <h2>About Me</h2>
             <p class="">
-                A Software Engineer with 2+ years of experience in WebApp and Hybrid Mobile App development with <span (click)="urlOpen('https://angular.io/docs')"><img id="ang" src="../../assets/icons/angular.svg">ngular</span> framework and <span (click)="urlOpen('https://nodejs.org/en/about')"> Node<img id="node" src="../../assets/icons/nodejs.svg"></span>  runtime environment
+                A Software Engineer with 2+ years of experience in WebApp and Hybrid Mobile App development with <span (click)="urlOpen('https://angular.io/docs')"><img id="ang" src="../../assets/icons/angular.svg">ngular</span> framework and <span (click)="urlOpen('https://nodejs.org/en/about')"> Node<img id="node" src="../../assets/icons/nodejs.svg"></span>  environment
              </p>
         </div>
     </div>
@@ -42,6 +44,7 @@
             </p>
         </div>
     </div>
+    <div id="skills"></div>
     <div class="skills-div">
         <div id="skills-header">
             <h2>Skills</h2>
@@ -50,23 +53,26 @@
             <div class="skl-body-main mgb-1-5">
                 <span><p>Frontend</p><p><img id="head-icons1" src="../../assets/icons/ui.svg"></p></span>
                 <div class="chips">
-                    <div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">SCSS</div><div class="chip">Angular</div><div class="chip">TypeScript</div>
+                    <div class="chip">Angular</div><div class="chip">Angular Material</div><div class="chip">Ionic</div><div class="chip">Capacitor</div><div class="chip">Cordova</div><div class="chip">TypeScript</div>
+                    <div class="chip">SCSS</div><div class="chip">HTML</div><div class="chip">CSS</div><div class="chip">JavaScript</div><div class="chip">JSON</div><div class="chip">RxJs</div>
                 </div>
             </div>
             <div class="skl-body-main mgb-1-5">
                 <span><p>Backend</p><p><img id="head-icons2" src="../../assets/icons/backend.svg" alt=""></p></span>
                 <div class="chips">
-                    <div class="chip">HTML</div><div class="chip">CSS</div>
-                </div>
+                    <div class="chip">NodeJS</div><div class="chip">PostgreSQL</div><div class="chip">Rest API</div>
+            </div>
             </div>
             <div class="skl-body-main">
                 <span><p>Tools</p><p><img id="head-icons3" src="../../assets/icons/tools.svg" alt=""></p></span>
                 <div class="chips">
-                    <div class="chip">HTML</div><div class="chip">CSS</div>
+                    <div class="chip">GIT</div><div class="chip">Android Studio</div><div class="chip">Google Play Console</div><div class="chip">Firebase</div><div class="chip">Canva</div>
+                    <div class="chip">MS Office</div><div class="chip">PhotoShop</div><div class="chip">AWS S3 Bucket</div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="exp"></div>
     <div class="experience-div">
         <div id="exp-header">
             <h2>Experience</h2>
@@ -79,6 +85,93 @@
         </div>
         <div class="exp-details">
             <ng-container *ngIf="showEdu; then education else work"></ng-container>
+        </div>
+    </div>
+    <div class="projects-div">
+        <div id="proj-header">
+            <h2>Projects</h2>
+        </div>
+        <div class="proj-body">
+            <p id="proj-name">CAMS NPS &nbsp;<i class="fa fa-external-link-square" (click)="urlOpen('https://www.camsnps.com/')"></i></p>
+            <ul>
+                <li>Built hybrid mobile application for National Pension Systems' CRA (CAMSNPS)</li>
+                <li>Published to Google Play Store and maintained version control</li>
+                <li>Designed and developed Administrator web application for CRA (CAMSNPS)</li>
+                <li>Vulnerability Assessment & Penetration Testing and Data encryption in transit</li>
+                <li>Fullstack Developer for CAMS-CRA Application</li>
+            </ul>
+        </div>
+        <div class="proj-body">
+            <p id="proj-name">EKAM &nbsp;<i class="fa fa-external-link-square" (click)="urlOpen('https://ekam.ngo/')"></i></p>
+            <ul>
+                <li>Designed brouchers, banners and signs, aligning with brand mission and values</li>
+                <li>Produced complex illustrations and animations satisfying client's brief</li>
+            </ul>
+        </div>
+    </div>
+    <div id="contact"></div>
+    <div class="contact-div">
+        <div id="cont-header">
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-body">
+            <div class="con-types">
+                <div class="cont1" (click)="urlOpen('https://t.me/S_Mukilan')">
+                    <div class="icon"><i class="fa-brands fa-telegram"></i></div>
+                    <div class="contact">
+                            <p class="con-type">Telegram</p>
+                            <p class="con-val">click to chat</p>
+                    </div>
+                </div>
+                <div class="v-line"></div>
+                <div class="cont1" (click)="urlOpen('mailto:mukil.300300@gmail.com')">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <div class="contact">
+                            <p class="con-type">Email</p>
+                            <p class="con-val">mukil.300300@gmail.com</p>
+                    </div>
+                </div>
+                <div class="v-line"></div>
+                <div class="cont1" (click)="copy('no.reason517@passinbox.com')">
+                    <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+                    <div class="contact">
+                            <p class="con-type">Email</p>
+                            <p class="con-val">no.reason517@passinbox.com</p>
+                    </div>
+                </div>
+                <div class="v-line"></div>
+                <div class="cont1" (click)="urlOpen('https://wa.me/+919884646319')">
+                    <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="contact">
+                            <p class="con-type">Whatsapp</p>
+                            <p class="con-val">click to chat</p>
+                    </div>
+                </div>
+                <div class="v-line"></div>
+                <div class="cont1">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="contact">
+                            <p class="con-type">Location</p>
+                            <p class="con-val">Chennai, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-div">
+        <div class="footer-1">
+            <div class="foot-name">
+                <span>Mukilan S</span>
+                <p>Software Developer</p>
+            </div>
+            <div class="socials">
+                <div (click)="urlOpen('https://x.com/Mukilan300300')"><i class="fa-brands fa-x-twitter"></i></div>
+                <div (click)="urlOpen('https://www.instagram.com/trust_me._im_an_engineer')"><i class="fa-brands fa-instagram"></i></div>
+                <div (click)="urlOpen('https://www.linkedin.com/in/mukilan-s-16b3a6183/')"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div><i class="fa-solid fa-copyright"></i><p>Mukilan S. All rights reserved.</p></div>
         </div>
     </div>
 </div>
