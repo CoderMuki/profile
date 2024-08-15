@@ -23,11 +23,9 @@ const analytics = getAnalytics(app);
 })
 export class AppComponent {
   title = 'Profile';
-  showHeader = false;
-  mobHeader = false;
+  mobHeader = (window.innerWidth < 600) ? true : false;
   showMenu = false;
   checkDiv(event: any) {
-    this.showHeader = event
     this.mobHeader = (window.innerWidth < 600) ? true : false;
   }
 
