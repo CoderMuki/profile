@@ -19,7 +19,7 @@
         </div>
         <div class="side-out3 sides">
             <div>
-                <p>2.6+ Yrs</p>
+                <p>{{this.expShort()}} Yrs</p>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@
         <div class="about-text">
             <h2>About Me</h2>
             <p class="">
-                Software Engineer with 2.6+ years experience in hybrid web app development using <span
+                Software Engineer with {{expLong()}} experience in hybrid web app development using <span
                     (click)="urlOpen('https://angular.io/docs')">
                     <img id="ang" src="../../assets/icons/angular.svg">ngular</span> framework and <span
                     (click)="urlOpen('https://nodejs.org/en/about')">
@@ -98,14 +98,15 @@
                     <p><img id="head-icons3" src="../../assets/icons/tools.svg" alt=""></p>
                 </span>
                 <div class="chips">
-                    <div class="chip">GIT</div>
+                    <div class="chip">GIT</div>                   
                     <div class="chip">Android Studio</div>
+                    <div class="chip">XCode</div>
                     <div class="chip">Google Play Console</div>
+                    <div class="chip">Apple Store Connect</div>
                     <div class="chip">Firebase</div>
                     <div class="chip">Canva</div>
                     <div class="chip">MS Office</div>
                     <div class="chip">PhotoShop</div>
-                    <div class="chip">AWS S3 Bucket</div>
                 </div>
             </div>
         </div>
@@ -231,7 +232,7 @@
         </div>
         <div class="footer-2">
             <div><i class="fa-solid fa-copyright"></i>
-                <p>Mukilan S. All rights reserved.</p>
+                <p>Mukilan S. All rights reserved. 2025</p>
             </div>
         </div>
         <div class="site-info" (mouseenter)="showsiteInfo=true" (mouseleave)="showsiteInfo=false"
