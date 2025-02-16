@@ -65,4 +65,25 @@ export class ProfileHomeComponent implements OnInit {
     alert(`Copied to clipboard`)
   }
 
+  expConversion() {
+  const today: any = new Date();
+  const startDate: any = new Date('01-10-2022'); // Stupid MM-DD-YYYY format
+  const diffTime: any = Math.abs(today - startDate);
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)); 
+  var years = Math.floor(diffDays / 365);
+  var months = Math.floor(diffDays % 365 / 30);
+  return {years,months}
+}
+
+expShort() {
+  const exp = this.expConversion();
+  return `${exp.years}.${exp.months}+`
+}
+expLong() {
+  const exp = this.expConversion();
+  var yearsDisplay = exp.years > 0 ? exp.years + (exp.years == 1 ? " year " : " years ") : "";
+  var monthsDisplay = exp.months > 0 ? exp.months + (exp.months == 1 ? " month " : " months ") : "";
+  return yearsDisplay + monthsDisplay; 
+}
+
 }
