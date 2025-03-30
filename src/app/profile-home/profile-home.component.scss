@@ -387,8 +387,12 @@
         }
 
         .proj-body {
-            margin: auto;
+            margin: 0 5em;
             line-height: 2;
+
+            .fa-npm {
+                font-size: larger;
+            }
 
             #proj-name {
                 font-weight: 600;
@@ -643,6 +647,32 @@
             }
 
         }
+
+        .make-own {
+            cursor: pointer;
+            text-align: center;
+            padding: 15px 0;
+            span {
+                color: var(--white);
+                font-family: var(--font-family);
+                font-size: 0.9em;
+            }
+        }
+
+        .author {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 15px 0;
+            .github-stats {
+                cursor: pointer;
+                img {
+                    pointer-events: none;
+                    height: 7em;
+                }
+            }
+        }
     }
 }
 
@@ -673,6 +703,12 @@
         .image-container:hover {
             .sides {
                 display: none;
+            }
+        }
+
+        .projects-div {
+            .proj-body {
+                margin: 0;
             }
         }
 
