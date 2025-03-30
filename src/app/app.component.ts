@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { Meta } from '@angular/platform-browser';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCzKFTT1pO_nN48gvD3Or2BC-wdiCeMvC0",
@@ -23,6 +24,9 @@ const analytics = getAnalytics(app);
 })
 export class AppComponent {
   title = 'Profile';
+  constructor (private meta : Meta) {
+    this.meta.addTag({ name: 'title' , content: 'developer, frontend developer, angular developer, mukilan, resume'}) // SEO optimization
+  }
   mobHeader = (window.innerWidth < 600) ? true : false;
   showMenu = false;
   checkDiv(event: any) {

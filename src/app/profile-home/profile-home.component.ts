@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ProfileHomeComponent implements OnInit {
 
-  showEdu = true;
+  showEdu = false;
   offBulb = true;
   showsiteInfo = false;
   @Output() showDiv = new EventEmitter<any>();

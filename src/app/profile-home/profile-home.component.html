@@ -35,7 +35,7 @@
                     (click)="urlOpen('https://angular.io/docs')">
                     <img id="ang" src="../../assets/icons/angular.svg">ngular</span> framework and <span
                     (click)="urlOpen('https://nodejs.org/en/about')">
-                    Node<img id="node" src="../../assets/icons/nodejs.svg"></span> environment, specializing in
+                    Node<img id="node" src="../../assets/icons/nodejs.svg"></span> environment, specializing in npm package writing,
                 customer-centric fintech applications, release
                 management and code debugging. Experienced in developing fresh designs, applications, and Rest APIs that
                 are innovative, creative and adaptive
@@ -79,6 +79,7 @@
                     <div class="chip">JavaScript</div>
                     <div class="chip">JSON</div>
                     <div class="chip">RxJs</div>
+                    <div class="chip">ChartJS</div>
                 </div>
             </div>
             <div class="skl-body-main mgb-1-5">
@@ -88,6 +89,7 @@
                 </span>
                 <div class="chips">
                     <div class="chip">NodeJS</div>
+                    <div class="chip">NPM packages</div>
                     <div class="chip">PostgreSQL</div>
                     <div class="chip">Rest API</div>
                 </div>
@@ -98,13 +100,15 @@
                     <p><img id="head-icons3" src="../../assets/icons/tools.svg" alt=""></p>
                 </span>
                 <div class="chips">
-                    <div class="chip">GIT</div>                   
+                    <div class="chip">GIT</div>
+                    <div class="chip">Postman</div>                  
                     <div class="chip">Android Studio</div>
                     <div class="chip">XCode</div>
+                    <div class="chip">Github</div>
+                    <div class="chip">Firebase</div>
+                    <div class="chip">Docker</div>
                     <div class="chip">Google Play Console</div>
                     <div class="chip">Apple Store Connect</div>
-                    <div class="chip">Firebase</div>
-                    <div class="chip">Canva</div>
                     <div class="chip">MS Office</div>
                     <div class="chip">PhotoShop</div>
                 </div>
@@ -133,22 +137,47 @@
             <h2>Projects</h2>
         </div>
         <div class="proj-body">
-            <p id="proj-name">CAMS NPS &nbsp;<i class="fa fa-external-link-square"
-                    (click)="urlOpen('https://www.camsnps.com/')"></i></p>
+            <p id="proj-name">CAMS NPS &nbsp;
+                <i class="fa-brands fa-chrome" (click)="urlOpen('https://www.camsnps.in/')"></i> &nbsp;
+                <i class="fa-brands fa-google-play" (click)="urlOpen('https://play.google.com/store/apps/details?id=com.camsnps.app')"></i>
+            </p>
             <ul>
-                <li>Built hybrid mobile application for National Pension Systems' CRA (CAMSNPS)</li>
-                <li>Published to Google Play Store and maintained version control</li>
-                <li>Designed and developed Administrator web application for CRA (CAMSNPS)</li>
-                <li>Vulnerability Assessment & Penetration Testing and Data encryption in transit</li>
-                <li>Fullstack Developer for CRA-CAMSNPS Web Application</li>
+                <li>Hybrid Android and iOS application for National Pension Systems' CRA (CAMSNPS) using Capacitor & Cordova.</li>
+                <li>Published to Google Play Store and maintained version control.</li>
+                <li>Designed and developed Administrator web application for system control of CRA (CAMSNPS).</li>
+                <li>Vulnerability Assessment & Penetration Testing and Data encryption in API transit for CRA (CAMSNPS).</li>
+                <li>Integrated QR code payment method in CRA (CAMSNPS).</li>
+                <li>Fullstack Developer for CRA-CAMSNPS Web Application.</li>
             </ul>
         </div>
         <div class="proj-body">
-            <p id="proj-name">EKAM &nbsp;<i class="fa fa-external-link-square"
+            <p id="proj-name">Password Generator &nbsp;
+                <i class="fa-brands fa-npm" (click)="urlOpen('https://www.npmjs.com/package/m-secure-password-generator')"></i> &nbsp;
+                <i (click)="urlOpen('https://github.com/CoderMuki/m-secure-password-generator?tab=readme-ov-file#m-secure-password-generator')" class="fa-brands fa-github"></i>
+            </p>
+            <ul>
+                <li>NPM package to generate passwords; Hosted on official NPM site.</li>
+                <li>Package compatible to use with various frameworks.</li>
+                <li>Supports password generation in browsers.</li>
+            </ul>
+        </div>
+        <div class="proj-body">
+            <p id="proj-name">Online Profile Template &nbsp;
+                <i class="fa-brands fa-chrome" (click)="urlOpen('https://online-profile-template.web.app/')"></i> &nbsp;
+                <i (click)="urlOpen('https://github.com/CoderMuki/profile-for-all?tab=readme-ov-file#profile-for-all')" class="fa-brands fa-github"></i>
+            </p>
+            <ul>
+                <li>Designed a template for everyone to make their own online resume profiles.</li>
+                <li>Step by step guide to design ones own personalized site.</li>
+                <li>Commands and setps to host the personalized site in Firebase.</li>
+            </ul>
+        </div>
+        <div class="proj-body">
+            <p id="proj-name">EKAM &nbsp;<i class="fa-brands fa-chrome"
                     (click)="urlOpen('https://ekam.ngo/')"></i></p>
             <ul>
-                <li>Designed brochures, banners and signs, aligning with brand mission and values</li>
-                <li>Produced complex illustrations and animations satisfying client's brief</li>
+                <li>Designed brochures, banners and signs, aligning with brand mission and values.</li>
+                <li>Produced complex illustrations, videos and animations matching client's brand value and goals.</li>
             </ul>
         </div>
     </div>
@@ -212,7 +241,7 @@
                 <div (click)="urlOpen('https://www.instagram.com/trust_me._im_an_engineer')"><i
                         class="fa-brands fa-instagram"></i></div>
                 <div (click)="urlOpen('https://www.linkedin.com/in/mukilansin')"><i
-                        class="fa-brands fa-linkedin"></i></div>
+                        class="fa-brands fa-linkedin-in"></i></div>
             </div>
         </div>
         <div class="footer-1-5">
@@ -236,9 +265,18 @@
             </div>
         </div>
         <div class="site-info" (mouseenter)="showsiteInfo=true" (mouseleave)="showsiteInfo=false"
-            (touchStart)="showsiteInfo=true" (touchEnd)="showsiteInfo=false" (click)="showsiteInfo=!showsiteInfo">
+            (click)="showsiteInfo=!showsiteInfo">
             <i class="fa-solid fa-circle-info"></i>
             <ng-container *ngIf="showsiteInfo; then siteInfo"></ng-container>
+        </div>
+        <div class="make-own" (click)="urlOpen('https://github.com/CoderMuki/profile-for-all?tab=readme-ov-file#profile-for-all')">
+            <span>Like this? click to get code and steps to make your own site from my Github</span>
+        </div>
+        <div class="author">
+            <a href="https://stackoverflow.com/users/21735865/mukilan"><img [src]="'https://stackoverflow.com/users/flair/21735865.png?theme='+(offBulb ? 'dark' : 'default')" width="225" height="60" alt="Mukilan's profile at Stack Overflow" title="Mukilan's profile at Stack Overflow"></a>
+            <div class="github-stats" (click)="urlOpen('https://github.com/CoderMuki')">
+                <img align="center" src="https://github-readme-stats.vercel.app/api?username=CoderMuki&show_icons=true&locale=en&title_color=21a319&icon_color=21a319&text_color=9f9f9f&bg_color=151515&hide_border=false&count_private=true" alt="mukilan" />
+            </div>
         </div>
     </div>
 </div>
@@ -318,7 +356,7 @@
             </h3>
             <span class="med-col">Sterling Software Pvt. Ltd., Chennai, India</span>
             <div class="med-col">
-                2022 - 2023
+                2022 - 2024 
             </div>
         </div>
         <div>
