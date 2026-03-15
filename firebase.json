@@ -9,7 +9,10 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "run": {
+          "serviceId": "portfolio-web-app",
+          "region": "asia-southeast1"
+        }
       }
     ]
   }
